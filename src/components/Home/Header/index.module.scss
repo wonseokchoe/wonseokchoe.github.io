@@ -1,0 +1,36 @@
+@import '@assets/scss/utils';
+
+.blind {
+  @include blind;
+}
+.header {
+  @include flex-container;
+  @include align-items(center);
+  @include flex(0 0 auto);
+
+  height: 70px;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+  &:not(:hover) {
+    text-decoration: none;
+  }
+}
+.list-nav {
+  margin-top: 20px;
+  margin-left: auto;
+}
+.nav {
+  font-size: 18px;
+  color: #000;
+}
+.button_theme {
+  @include button-reset;
+
+  margin-left: 15px;
+}
