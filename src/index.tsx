@@ -14,7 +14,7 @@ const App = () => {
     const [isDarkTheme, setDarkTheme] = useState(false);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <div className={cx('app', {'theme-dark': isDarkTheme})}>
                 <Header onChange={isDarkTheme => {
                     setDarkTheme(isDarkTheme)
