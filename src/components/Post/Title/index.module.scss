@@ -1,0 +1,13 @@
+@import '@assets/scss/utils';
+
+.title {
+    @include flex-container;
+    @include align-items(flex-end);
+
+    height: 30vh;
+    padding: 0 20px 20px 20px;
+    background-size: auto 100%;
+    font-size: 2.5vh;
+    font-weight: 500;
+    color: #fff;
+}
