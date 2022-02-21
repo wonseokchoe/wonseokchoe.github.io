@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { createBrowserHistory as history } from 'history'
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 import MyPost from '@pages/post/MyPost';
-import bbs from '@pages/bbs';
+import Bbs from '@pages/bbs';
 import Header from '@components/Home/Header';
 import styles from './index.module.scss';
 import classNames from 'classnames/bind';
@@ -21,8 +21,8 @@ const App = () => {
                 }}/>
                 <div className={cx('content')}>
                     <Routes>
-                        <Route path="/bbs" element={bbs}></Route>
-                        <Route path="/post1" element={MyPost} />
+                        <Route path="/bbs" element={<Bbs />}></Route>
+                        <Route path="/post1" element={<MyPost />} />
                     </Routes>
                 </div>
             </div>
