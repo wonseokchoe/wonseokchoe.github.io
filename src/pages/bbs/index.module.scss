@@ -1,0 +1,81 @@
+@import '@assets/scss/utils';
+
+.blind {
+    @include blind;
+}
+.bbs {
+    padding: 10px;
+
+    &:after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+}
+.item {
+    padding: 10px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 401px) {
+        float: left;
+        width: 50%;
+    }
+    @media screen and (min-width: 540px) {
+        width: 33.33333%;
+    }
+    @media screen and (min-width: 768px) {
+        width: 25%;
+    }
+}
+.inner {
+    overflow: hidden;
+    position: relative;
+    border-radius: 5vw;
+    background: #fff;
+    box-shadow:  15px 15px 30px #b5b5b5, -15px -15px 30px #ffffff;
+
+    @media screen and (min-width: 401px) {
+        border-radius: 3vw;
+    }
+    @media screen and (min-width: 768px) {
+        border-radius: 1vw;
+    }
+}
+.thumbnail {
+    overflow: hidden;
+    position: relative;
+    padding-top: 100%;
+}
+.image {
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+.text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 8px 15px;
+    background-color: #fff;
+
+}
+.title {
+    @include ellipsis-single;
+
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+}
+.link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
