@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserHistory as history } from 'history'
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 import MyPost from '@pages/post/MyPost';
 import bbs from '@pages/bbs';
 import Header from '@components/Home/Header';
@@ -20,10 +20,10 @@ const App = () => {
                     setDarkTheme(isDarkTheme)
                 }}/>
                 <div className={cx('content')}>
-                    <Switch>
-                        <Route path="/bbs" component={bbs}></Route>
-                        <Route path="/post1" component={MyPost} />
-                    </Switch>
+                    <Routes>
+                        <Route path="/bbs" element={bbs}></Route>
+                        <Route path="/post1" element={MyPost} />
+                    </Routes>
                 </div>
             </div>
         </BrowserRouter>
