@@ -35,10 +35,10 @@
     box-shadow:  15px 15px 30px #b5b5b5, -15px -15px 30px #ffffff;
 
     @media screen and (min-width: 401px) {
-        border-radius: 3vw;
+        border-radius: 2vw;
     }
     @media screen and (min-width: 768px) {
-        border-radius: 1vw;
+        border-radius: 0.5vw;
     }
 }
 .thumbnail {
@@ -57,18 +57,16 @@
     margin: auto;
 }
 .text {
+}
+.title {
+    @include ellipsis-single;
+
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 8px 15px;
     background-color: #fff;
-
-}
-.title {
-    @include ellipsis-single;
-
-    display: block;
     font-size: 14px;
     line-height: 24px;
 }

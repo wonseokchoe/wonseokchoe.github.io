@@ -16,9 +16,7 @@ const Bbs = () => {
                             <div className={cx('thumbnail')}>
                                 <img src={item.thumbnail} className={cx('image')} alt="" />
                             </div>
-                            <p className={cx('text')}>
-                                <span className={cx('title')}>{item.title}</span>
-                            </p>
+                            <p className={cx('title')}>{item.title}</p>
                             <Link to={item.url} className={cx('link')}>
                                 <span className={cx('blind')}>{item.linkText}</span>
                             </Link>

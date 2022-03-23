@@ -21,7 +21,7 @@ const App = () => {
                 }}/>
                 <div className={cx('content')}>
                     <Routes>
-                        <Route path="/bbs" element={<Bbs />}></Route>
+                        <Route path="/bbs" element={<Bbs />} />
                         <Route path="/post1" element={<MyPost />} />
                     </Routes>
                 </div>
